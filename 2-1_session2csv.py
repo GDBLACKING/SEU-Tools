@@ -6,8 +6,8 @@ from utils.csv_writer import write_csv
 from utils.packet_parsing import packet_parse
 
 abspath = os.path.abspath('.')
-input_path = "4_Session_Pcaps"
-output_path = "5_Session_Csvs"
+input_path = "3_Session_Pcaps"
+output_path = "4_Session_Csvs"
 
 print("Pcap to Csvs Start ...")
 folders= os.listdir(input_path)

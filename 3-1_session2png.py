@@ -47,7 +47,7 @@ for folder in folders:
             pngs = pcap2png(file_path, img_size = 784, img_column = 28)
 
             name1 = file_path.split('\\')
-            path = abspath + '\\' + '6_PNGs' + '\\' + name1[-2]
+            path = abspath + '\\' + '5_PNGs' + '\\' + name1[-2]
             if not os.path.exists(path):
                 os.mkdir(path)
             name2 = name1[-1].split('\\')

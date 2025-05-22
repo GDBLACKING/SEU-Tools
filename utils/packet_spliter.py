@@ -15,7 +15,7 @@ def packet_split(pcap,split_mode):
             continue
 
         file_name = pcap.split('\\')
-        sub_pcap_path = abspath + '\\' + '4_Session_Pcaps'+ '\\' + file_name[-2]
+        sub_pcap_path = abspath + '\\' + '3_Session_Pcaps'+ '\\' + file_name[-2]
         if not os.path.exists(sub_pcap_path):
             os.mkdir(sub_pcap_path)
         five_tuple = five_tuple.replace('.', '-')
@@ -30,7 +30,7 @@ def packet_split(pcap,split_mode):
                 flow_list.append(five_tuple)
             if five_tuple1 in flow_list:
                 five_tuple = five_tuple1
-        sub_pcap_name = './4_Session_Pcaps' + "/" + file_name[-2] + "/" + five_tuple + '.pcap'
+        sub_pcap_name = './3_Session_Pcaps' + "/" + file_name[-2] + "/" + five_tuple + '.pcap'
         writer = PcapWriter(sub_pcap_name, append=True)
         try:
             writer.write(packet)
