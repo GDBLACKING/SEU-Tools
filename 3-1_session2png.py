@@ -3,7 +3,6 @@
     Author:Song Wei
     Email:<220225876@seu.edu.cn>
 
-    *以Csv形式存储Pngs，避免多次处理图片
 """
 
 #%%

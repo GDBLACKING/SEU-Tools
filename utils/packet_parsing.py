@@ -1,6 +1,6 @@
 
 # -*- coding: utf-8 -*-
-# 支持协议：ARP、DHCP、IGMPv3、ICMP、DNS、TCP、SSDP、NBNS、BROWSER
+
 def packet_parse(data):
 
     flow_list = []
